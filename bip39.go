@@ -349,9 +349,9 @@ func computeChecksum(data []byte) ([]byte, error) {
 // validateEntropyBitSize ensures that entropy is the correct size for being a
 // mnemonic.
 func validateEntropyBitSize(bitSize int) error {
-	if (bitSize%32) != 0 || bitSize < 128 || bitSize > 256 {
-		return ErrEntropyLengthInvalid
-	}
+	// if (bitSize%32) != 0 || bitSize < 128 || bitSize > 256 {
+	// 	return ErrEntropyLengthInvalid
+	// }
 	return nil
 }
 
