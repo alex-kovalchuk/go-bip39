@@ -289,12 +289,12 @@ func IsMnemonicValid(mnemonic string) bool {
 	words := strings.Fields(mnemonic)
 
 	// Get word count
-	wordCount := len(words)
+	// wordCount := len(words)
 
 	// The number of words should be 12, 15, 18, 21 or 24
-	if wordCount%3 != 0 || wordCount < 12 || wordCount > 24 {
-		return false
-	}
+	// if wordCount%3 != 0 || wordCount < 12 || wordCount > 24 {
+	// 	return false
+	// }
 
 	// Check if all words belong in the wordlist
 	for _, word := range words {
